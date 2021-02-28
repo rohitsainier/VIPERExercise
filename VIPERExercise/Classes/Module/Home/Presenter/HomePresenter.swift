@@ -8,7 +8,7 @@
 import Foundation
 protocol HomePresentation {
     func viewDidLoad() -> Void
-    func didSelectUser() -> Void
+    func didSelectUser(user: User) -> Void
 }
 
 struct HomePresenter{
@@ -24,8 +24,8 @@ struct HomePresenter{
 }
 
 extension HomePresenter: HomePresentation{
-    func didSelectUser() {
-        router.naviagateToDetail()
+    func didSelectUser(user: User) {
+        router.naviagateToDetail(user: user)
     }
     
     func viewDidLoad() {
