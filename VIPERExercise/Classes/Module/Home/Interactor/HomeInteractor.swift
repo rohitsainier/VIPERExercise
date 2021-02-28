@@ -12,14 +12,14 @@ typealias responseHandler = (_ success: Bool,_ message:String,_ response: [User]
 protocol HomeUseCase {
     func loadUsers(completion: @escaping (responseHandler)) -> Void
 }
-struct HomeInteractor: HomeUseCase{
+struct HomeInteractor{
     let session:URLSession
     init(session: URLSession){
         self.session = session
     }
 }
 
-extension HomeInteractor{
+extension HomeInteractor:HomeUseCase{
     func loadUsers(completion: @escaping (responseHandler)) {
         session.request(.users, using: Void()) { (result) in
             switch result{

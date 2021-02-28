@@ -8,6 +8,7 @@
 import Foundation
 protocol HomePresentation {
     func viewDidLoad() -> Void
+    func didSelectUser() -> Void
 }
 
 struct HomePresenter{
@@ -23,6 +24,10 @@ struct HomePresenter{
 }
 
 extension HomePresenter: HomePresentation{
+    func didSelectUser() {
+        router.naviagateToDetail()
+    }
+    
     func viewDidLoad() {
         interactor.loadUsers{ (status, message, users) in
             if status{

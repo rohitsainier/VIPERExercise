@@ -15,13 +15,13 @@ struct NavigationBuilder{
         let textStyleAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 22)]
         let largeTextStyleAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 28)]
         let navigationConntroller = UINavigationController(rootViewController: rootView)
-        navigationConntroller.navigationBar.tintColor = UIColor.red
+        navigationConntroller.navigationBar.tintColor = UIColor.black
         navigationConntroller.navigationBar.barTintColor = UIColor.brown
         navigationConntroller.navigationBar.titleTextAttributes = textStyleAttributes
         navigationConntroller.navigationBar.largeTitleTextAttributes = largeTextStyleAttributes
         navigationConntroller.navigationBar.isTranslucent = true
         navigationConntroller.navigationBar.prefersLargeTitles = true
-        navigationConntroller.navigationBar.isHidden = true
+        navigationConntroller.navigationBar.isHidden = false
         return navigationConntroller
     }
 }

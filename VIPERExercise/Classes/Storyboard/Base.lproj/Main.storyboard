@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="-43" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="6H1-hf-seV">
             <objects>
-                <viewController id="HFA-Ja-72l" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="HFA-Ja-72l" customClass="DetailsViewController" customModule="VIPERExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kga-F2-1gp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
     }
     
     private func configUI(){
-        self.title = "Home"
         tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
     }
 }
@@ -41,7 +40,7 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        presenter.didSelectUser()
     }
 }
 

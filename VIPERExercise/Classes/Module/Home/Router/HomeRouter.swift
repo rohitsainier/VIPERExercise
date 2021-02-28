@@ -8,16 +8,19 @@
 import UIKit
 
 protocol HomeRounting {
-    
+    func naviagateToDetail()
 }
 
 struct HomeRouter{
-    var viewController: UIViewController
+    var view: UIViewController
     init(view: UIViewController){
-        self.viewController = view
+        self.view = view
     }
 }
 
 extension HomeRouter: HomeRounting{
-    
+    func naviagateToDetail() {
+        let DestinationVC: DetailsViewController = Storyboard.Main.load.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        self.view.navigationController?.pushViewController(DestinationVC, animated: true)
+    }
 }

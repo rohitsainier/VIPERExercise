@@ -11,6 +11,7 @@ struct HomeModuleBuilder{
     static func build(usingNavigationFactory factory: NavigationFactory) -> UINavigationController{
         let mainstory = Storyboard.Main.load
         let view = mainstory.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        view.title = "Home"
         let interactor = HomeInteractor(session: .shared)
         let router = HomeRouter(view: view)
         let presenter = HomePresenter(view: view, interactor: interactor, router: router)
