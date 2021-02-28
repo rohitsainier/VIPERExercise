@@ -12,6 +12,7 @@ struct User: Codable {
     let address: Address?
     let phone, website: String
     let company: Company?
+    let isFavourite:Bool
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -23,6 +24,7 @@ struct User: Codable {
         phone = try values.decodeIfPresent(String.self, forKey: .phone) ?? ""
         website = try values.decodeIfPresent(String.self, forKey: .website) ?? ""
         company = try values.decodeIfPresent(Company.self, forKey: .company) ?? nil
+        isFavourite = try values.decodeIfPresent(Bool.self, forKey: .isFavourite) ?? false
     }
 }
 
